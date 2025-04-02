@@ -1,15 +1,30 @@
 <header id="navbar">
-    
-    <a id="site-title" class="headline" href="/">
-        {{ shop.name }}
-    </a>
-    
-   {% render 'site-nav' %}
+    <div class="wrap">
 
-   <a href="/cart">
-    {{ cart.item_count }} {{ cart.item_count | pluralize: 'item', 'items' }} ({{ cart.total_price | money }})
-   </a>
+        <a id="site-title" class="headline" href="/">
+            {{ shop.name }}
+        </a>
 
-   {% render 'customer-login' %}
+        {% render 'site-nav' %}
+
+        <div class="right">
+
+            {% render 'customer-login' %}
+
+            <a href="/cart">
+                {{ cart.item_count }} {{ cart.item_count | pluralize: 'item', 'items' }} ({{ cart.total_price | money }})
+            </a>
+
+        </div>
+        
+    </div>
+
+
+    
+   
+
+
+
+   
 
 </header>
