@@ -1,7 +1,15 @@
-{% comment %}
-  Very important reading:
-  http://docs.shopify.com/themes/liquid-basics/what-is-true-and-false-in-liquid
-  Learn how to read theme settings in your theme.
-{% endcomment %}
+{% for coll in collections %}
 
-{{ page.content }}
+  {% case coll.handle %}
+    {% when 'frontpage' %}
+
+      {% for prod in coll.products %}
+        {{ prod.title }}
+      {% endfor %}
+
+    {% else %}
+
+      no products
+  {% endcase %}
+
+{% endfor %}
