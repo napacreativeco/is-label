@@ -44,6 +44,7 @@ header#navbar {
         display: none;
         background: var(--white);
         z-index: 10;
+        align-self: flex-end;
     }
 
 }
