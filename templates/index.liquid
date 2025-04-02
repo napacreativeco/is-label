@@ -1,19 +1,26 @@
 <link rel="stylesheet" href="{{ 'product-grid.css' | asset_url }}" />
 
+<div class="page-container">
 
-<ul class="products">
-  {% for coll in collections %}
+  <div class="page-header">
+    <h2>Latest Releases</h2>
+  </div>
 
-    
-      {% if coll.handle == 'frontpage' %}
- 
-          {% for prod in coll.products %}
-            {% render 'product-card', prod: prod %}
-          {% endfor %}
+  <ul class="products">
+    {% for coll in collections %}
+
+      
+        {% if coll.handle == 'frontpage' %}
+  
+            {% for prod in coll.products %}
+              {% render 'product-card', prod: prod %}
+            {% endfor %}
 
 
-      {% endif %}
-    
+        {% endif %}
+      
 
-  {% endfor %}
-</ul>
+    {% endfor %}
+  </ul>
+
+</div>
