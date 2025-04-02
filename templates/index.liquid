@@ -2,9 +2,8 @@
   {% for coll in collections %}
 
     
-      {% case coll.handle %}
-        {% when 'frontpage' %}
-
+      {% if coll.handle == 'frontpage' %}
+ 
           {% for prod in coll.products %}
             <li class="product">
               <div class="image">
@@ -16,10 +15,8 @@
             </li>
           {% endfor %}
 
-        {% else %}
 
-          no products
-      {% endcase %}
+      {% endif %}
     
 
   {% endfor %}
