@@ -1,1 +1,1 @@
-ul.products{display:grid;grid-template-columns:repeat(4,minmax(0,1fr))}ul.products li.product img{width:100%;display:block}
+ul.products{display:grid;grid-template-columns:repeat(4,minmax(0,1fr))}ul.products li.product .image{margin:0 0 10px 0}ul.products li.product img{width:100%;display:block}ul.products li.product .title{margin:0 0 4px 0}@media screen and (max-width:767px){ul.products{grid-template-columns:repeat(2,minmax(0,1fr))}}
