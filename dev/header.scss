@@ -24,11 +24,17 @@ header#navbar {
         padding: 0;
     }
 
+    .center {
+        display: flex;
+        justify-content: center;
+    }
+
     .right {
         display: flex;
         flex-direction: row;
         align-items: center;
         justify-content: flex-end;
+        gap: 10px;
         
         svg {
             width: 20px;

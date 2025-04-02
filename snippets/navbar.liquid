@@ -1,11 +1,17 @@
 <header id="navbar">
     <div class="wrap">
 
-        <a id="site-title" class="headline" href="/">
-            {{ shop.name }}
-        </a>
+        <div class="left">
+            <a id="site-title" class="headline" href="/">
+                {{ shop.name }}
+            </a>
+        </div>
+ 
 
-        {% render 'site-nav' %}
+        <div class="center">
+            {% render 'site-nav' %}
+        </div>
+        
 
         <div class="right">
 
