@@ -11,6 +11,7 @@ header#navbar {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         align-items: center;
+        padding: 10px 20px;
     }
 
     ul {
@@ -23,6 +24,14 @@ header#navbar {
         padding: 0;
     }
 
+    .right {
+        
+        svg {
+            width: 20px;
+        }
+
+    }
+
     .login-dropdown {
         display: none;
     }
@@ -30,7 +39,7 @@ header#navbar {
     .login-trigger {
         position: relative;
     }
-    
+
     .login-trigger:hover {
 
         .login-dropdown {
