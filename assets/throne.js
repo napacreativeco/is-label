@@ -12,4 +12,10 @@
 
     });
 
+    $(document).on('ready', function(e) {
+
+        console.log('Document clicked');
+
+    });
+
 })(jQuery);
