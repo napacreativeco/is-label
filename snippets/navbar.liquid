@@ -1,0 +1,20 @@
+<header id="navbar">
+   {% render 'site-nav' %}
+
+   <a href="/cart">
+    {{ cart.item_count }} {{ cart.item_count | pluralize: 'item', 'items' }} ({{ cart.total_price | money }})
+   </a>
+
+   {% render 'customer-login' %}
+
+
+   {% if settings.use_logo %}
+    <a id="logo" href="/">
+      {{ 'logo.png' | asset_url | img_tag: shop.name }}
+    </a>
+  {% else %}
+    <a id="site-title" href="/">
+      {{ shop.name }}
+    </a>
+  {% endif %}
+</header>
