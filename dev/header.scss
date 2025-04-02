@@ -38,6 +38,12 @@ header#navbar {
             position: relative;
         }
 
+        .mini-cart {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+
     }
 
     .login-dropdown {
