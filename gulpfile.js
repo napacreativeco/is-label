@@ -48,8 +48,7 @@ function buildComponents() {
 //     return gulp.src(['./dev/js/index.js'])
 //         .pipe(gulp.dest('./assets/'));
 // };
-
-exports.buildScripts = buildScripts;
+//exports.buildScripts = buildScripts;
 
 function watch() {
     gulp.watch('./dev/components/*.scss', buildComponents);
