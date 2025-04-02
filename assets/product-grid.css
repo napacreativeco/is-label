@@ -1,1 +1,1 @@
-ul.products{display:grid;grid-template-columns:repeat(4,minmax(0,1fr))}
+ul.products{display:grid;grid-template-columns:repeat(4,minmax(0,1fr))}ul.products li.product img{width:100%;display:block}
