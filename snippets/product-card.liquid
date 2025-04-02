@@ -1,0 +1,15 @@
+<li class="product">
+    <div class="image">
+        <img src="{{ prod.media[0] | image_url: width: '800' }}" alt="{{ prod.title }}" />
+    </div>
+    <div class="title">
+        <h2>{{ prod.title }}</h2>
+    </div>
+    <div class="price">
+    {% if product.price_varies %}From{% endif %}
+        {{ product.price | money }}
+        {% if on_sale %}
+        <s class="compare-at-price">{{ product.compare_at_price | money }}</s>
+        {% endif %}
+    </div>
+</li>
