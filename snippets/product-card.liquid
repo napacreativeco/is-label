@@ -6,10 +6,10 @@
         <h2>{{ prod.title }}</h2>
     </div>
     <div class="price">
-    {% if product.price_varies %}From{% endif %}
-        {{ product.price | money }}
+    {% if prod.price_varies %}From{% endif %}
+        {{ prod.price | money }}
         {% if on_sale %}
-        <s class="compare-at-price">{{ product.compare_at_price | money }}</s>
+            <s class="compare-at-price">{{ prod.compare_at_price | money }}</s>
         {% endif %}
     </div>
 </li>
