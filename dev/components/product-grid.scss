@@ -1,6 +1,9 @@
 ul.products {
     display: grid;
     grid-template-columns: repeat(4, minmax(0, 1fr));
+    list-style: none;
+    margin: 0;
+    padding: 0;
 
     li.product {
         .image {
