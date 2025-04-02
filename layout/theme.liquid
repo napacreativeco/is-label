@@ -65,13 +65,19 @@
 
       $('.login-trigger').on('click', function() {
 
-          $('.login-dropdown').css({
-              display: 'block',
-              position: 'absolute',
-              right: '0',
-              bottom: '-100'
-          });
-
+          if ($('.login-dropdown').css('display') == 'block') {
+              $('.login-dropdown').css({
+                  display: 'none'
+              });
+          } else {
+              $('.login-dropdown').css({
+                  display: 'block',
+                  position: 'absolute',
+                  right: '0',
+                  bottom: '-100'
+              });
+          }
+          
       });
 
     })(jQuery);
