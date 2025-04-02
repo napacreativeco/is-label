@@ -52,7 +52,7 @@ function buildComponents() {
 
 function watch() {
     gulp.watch('./dev/components/*.scss', buildComponents);
-    gulp.watch('./dev/scss/**/*.scss',buildStyles);
+    gulp.watch('./dev/**/*.scss',buildStyles);
     //gulp.watch('./dev/js/**/*.js',buildScripts);
 }
 exports.watch = watch;
