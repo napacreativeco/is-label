@@ -6,7 +6,9 @@
             display: 'block',
             position: 'absolute',
             bottom: '-100'
-        })
+        });
+
+        console.log('Login dropdown triggered');
 
     });
 
