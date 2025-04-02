@@ -34,16 +34,16 @@ header#navbar {
             width: 20px;
         }
 
-    }
+        .login-dropdown {
+            display: none;
+            background: var(--white);
+            z-index: 10;
+        }
+    
+        .login-trigger {
+            position: relative;
+        }
 
-    .login-dropdown {
-        display: none;
-        background: var(--white);
-        z-index: 10;
-    }
-
-    .login-trigger {
-        position: relative;
     }
 
 }
