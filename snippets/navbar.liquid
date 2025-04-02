@@ -1,4 +1,8 @@
 <header id="navbar">
+    <a id="site-title" class="headline" href="/">
+        {{ shop.name }}
+    </a>
+    
    {% render 'site-nav' %}
 
    <a href="/cart">
@@ -17,4 +21,5 @@
       {{ shop.name }}
     </a>
   {% endif %}
+
 </header>
