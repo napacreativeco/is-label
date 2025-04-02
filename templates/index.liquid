@@ -1,15 +1,24 @@
 {% for coll in collections %}
 
-  {% case coll.handle %}
-    {% when 'frontpage' %}
+  <ul class="products">
+    {% case coll.handle %}
+      {% when 'frontpage' %}
 
-      {% for prod in coll.products %}
-        {{ prod.title }}
-      {% endfor %}
+        {% for prod in coll.products %}
+          <li class="product">
+            <div class="image">
+              <img src="{{ prod.images[0].src }}" alt="{{ prod.title }}" />
+            </div>
+            <div class="title">
+              <h2>{{ prod.title }}</h2>
+            </div>
+          </li>
+        {% endfor %}
 
-    {% else %}
+      {% else %}
 
-      no products
-  {% endcase %}
+        no products
+    {% endcase %}
+  </ul>
 
 {% endfor %}
