@@ -45,6 +45,10 @@ header#navbar {
         background: var(--white);
         z-index: 10;
         padding: 0 20px 0 0;
+
+        a:hover {
+            text-decoration: underline;
+        }
     }
 
 }

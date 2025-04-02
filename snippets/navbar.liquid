@@ -15,7 +15,7 @@
             
             <div class="mini-cart">
                 <a href="/cart">
-                    {{ cart.item_count }} {{ cart.item_count | pluralize: 'item', 'items' }}
+                    {{ cart.item_count }} {% render 'icon--cart' %}
                 </a>
             </div>
 
