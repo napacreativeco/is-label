@@ -23,4 +23,22 @@ header#navbar {
         padding: 0;
     }
 
+    .login-dropdown {
+        display: none;
+    }
+
+    .login-trigger {
+        position: relative;
+    }
+    
+    .login-trigger:hover {
+
+        .login-dropdown {
+            display: block;
+            position: absolute;
+            bottom: -100%;
+        }
+
+    }
+
 }

@@ -9,14 +9,21 @@
 
         <div class="right">
 
-            {% render 'customer-login' %}
+            <div class="login-trigger">
+                {% render 'icon--account' %}
+
+                <div class="login-dropdown">
+                    {% render 'customer-login' %}
+                </div>
+            </div>
+            
 
             <a href="/cart">
                 {{ cart.item_count }} {{ cart.item_count | pluralize: 'item', 'items' }} ({{ cart.total_price | money }})
             </a>
 
         </div>
-        
+
     </div>
 
 
