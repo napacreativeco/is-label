@@ -12,7 +12,7 @@
     {% for coll in collections %}
 
       
-        {% if coll.title == 'frontpage' %}
+        {% if coll.handle == 'frontpage' %}
   
             {% for prod in coll.products %}
               {% render 'product-card', prod: prod %}
