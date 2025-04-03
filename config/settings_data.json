@@ -28,9 +28,10 @@
           "release_slide_kJDH46": {
             "type": "release_slide",
             "settings": {
-              "release_product": "",
-              "release_description": "",
-              "release_url_listen": ""
+              "release_product": "test-vinyl",
+              "release_description": "This is the custom description for the Product Slide",
+              "release_background_image": "shopify://shop_images/temp-background.jpg",
+              "release_url_listen": "shopify://products/test-vinyl"
             }
           }
         },
