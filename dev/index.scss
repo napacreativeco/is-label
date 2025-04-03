@@ -52,6 +52,8 @@ main[role="main"] {
 .page-container {
     padding: 0 var(--side-padding);
     min-height: calc(100svh - 100px);
+    max-width: 1600px;
+    margin: 0 auto;
 }
 
 
