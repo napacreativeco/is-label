@@ -1,8 +1,47 @@
 .artist-collection {
+    padding-top: var(--side-padding);
 
-    .artist-header {
+    .artist-hero {
         height: 50vh;
         width: 100%;
+        margin: 0 0 40px 0;
+    }
+
+    .artist-info {
+        display: grid;
+        grid-template-columns: 3fr 1fr;
+    }
+
+    .left {
+        margin: 0 0 20px 0;
+
+        h1 {
+            font-size: 34px;
+            margin: 0 0 20px 0;
+        }
+    }
+
+    .right {
+        h3 {
+            margin: 0 0 14px 0;
+        }
+
+        .metafield-rich_text_field {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+    }
+
+}
+
+@media screen and (max-width: 767px) {
+    
+    .artist-collection {
+        .artist-info {
+            grid-template-columns: 1fr;
+        }
     }
 
 }
