@@ -1,14 +1,18 @@
 <div class="release-slide hero-slide swiper-slide">
     <div class="text">
-        <h2>{{ block.settings.release_product.description }}</h2>
-        <h3>{{ block.settings.release_product.title }}</h3>
+        <span class="release-title">{{ block.settings.release_product.title }}</span>
+        <span class="release-artist">by {{ block.settings.release_artist }}</span>
 
         <div class="product-image">
             <img src="{{ block.settings.release_product.media[0] | image_url: width: '800' }}" />
         </div>
 
+        <div class="description">
+            <span>{{ block.settings.release_product.description }}</span>
+        </div>
+
         <div class="button">
-            {{ block.settings.release_product.release_url_listen }}
+            <a href="{{ block.settings.release_product.url }}">View Product</a>
         </div>
     </div>
     <div class="image" style="background: url('{{ block.settings.release_background_image | image_url }}'); background-size: cover; background-position: {{ block.settings.release_background_image.presentation.focal_point }};"></div>

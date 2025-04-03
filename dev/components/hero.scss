@@ -32,13 +32,13 @@
         } 
 
         .swiper-button-prev, .swiper-button-next {
-            box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
             text-align: center;
         }
 
         .swiper-button-next::after, .swiper-button-prev::after {
             color: var(--black);
             background: var(--white);
+            box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
             border-radius: 50px;
             font-size: 20px;
             aspect-ratio: 1/1 !important;
@@ -69,11 +69,17 @@
                 margin: 0 0 16px 0;
             }
 
-            a {
+            .button a {
                 border-bottom: 2px solid var(--black);
                 font-weight: 600;
                 text-transform: uppercase;
             }
+
+            .button a:hover {
+                color: var(--accent);
+                border-bottom: 2px solid var(--accent);
+            }
+            
         }
     }
 
@@ -86,11 +92,37 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
+
+            .release-title {
+                font-size: 24px;
+                font-weight: 600;
+                margin: 0 0 4px 0;
+            }
+
+            .release-artist {
+                margin: 0 0 12px 0;
+            }
+
+            .description {
+                font-size: 14px;
+                margin: 0 0 20px 0;
+            }
+
+            .button a {
+                border-bottom: 2px solid var(--black);
+                font-weight: 600;
+                text-transform: uppercase;
+            }
+
+            .button a:hover {
+                color: var(--accent);
+                border-bottom: 2px solid var(--accent);
+            }
         }
 
         .product-image {
             width: 60%;
-            margin: 0 auto;
+            margin: 0 auto 20px auto;
             
             img {
                 display: block;

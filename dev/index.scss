@@ -5,6 +5,7 @@
     --white: #f9f9f9;
     --black: #2e2e2e;
     --grey: #d6d6d6;
+    --accent: #b41b1b;
 
     --side-padding: 40px;
 }
@@ -50,12 +51,17 @@ main[role="main"] {
 .page-header {
     margin: 0 0 34px 0;
 
-    h2 {
+    h1, h2 {
         font-size: 20px;
         border-bottom: 2px solid var(--black);
         display: inline;
         padding: 0 0 5px 0;
     }
+
+    p {
+        margin-top: 20px;
+    }
+    
 }
 
 @media screen and (max-width: 767px) {
