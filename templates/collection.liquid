@@ -6,40 +6,39 @@
   {% paginate collection.products by 10 %}
 
     <div class="page-header">
-      <h1>{{ collection.title }}</h1>
-      {% if collection.description.size > 0 %}
-        {{ collection.description }}
-      {% endif %}
+
+      <div class="title">
+        <h1>{{ collection.title }}</h1>
+        {% if collection.description.size > 0 %}
+          {{ collection.description }}
+        {% endif %}
+      </div>
+
+      <div class="sorting">
+        <span>Sort</span>
+        {% if collection.products_count > 1 %}
+          <select class="sort-by right">
+            <option value="manual">Featured</option>
+            <option value="price-ascending">Price: Low to High</option>
+            <option value="price-descending">Price: Hight to Low</option>
+            <option value="title-ascending">A-Z</option>
+            <option value="title-descending">Z-A</option>
+            <option value="created-ascending">Oldest to Newest</option>
+            <option value="created-descending">Newest to Oldest</option>
+            <option value="best-selling">Best Selling</option>
+          </select>
+        {% endif %}
+      </div>
+
     </div>
-
-
-    {% comment %}
-      Collection sorting. Needs the JavaScript that is at the bottom of this file.
-    {% endcomment %}
-    {% if collection.products_count > 1 %}
-      <select class="sort-by right">
-        <option value="manual">Featured</option>
-        <option value="price-ascending">Price: Low to High</option>
-        <option value="price-descending">Price: Hight to Low</option>
-        <option value="title-ascending">A-Z</option>
-        <option value="title-descending">Z-A</option>
-        <option value="created-ascending">Oldest to Newest</option>
-        <option value="created-descending">Newest to Oldest</option>
-        <option value="best-selling">Best Selling</option>
-      </select>
-    {% endif %}
 
     <ul class="products">
       {% for coll in collections %}
         
-        {% if coll.handle == 'frontpage' %}
-  
-            {% for prod in coll.products %}
-              {% render 'product-card', prod: prod %}
-            {% endfor %}
+        {% for prod in coll.products %}
+          {% render 'product-card', prod: prod %}
+        {% endfor %}
 
-        {% endif %}
-        
       {% endfor %}
     </ul>
     
@@ -49,6 +48,8 @@
     {% endif %}
 
   {% endpaginate %}
+
+  {% render 'artist-widget' %}
 
 </div>
 

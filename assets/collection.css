@@ -1,1 +1,1 @@
-.collection{padding-top:40px}
+.collection{padding-top:40px}.collection .page-header{display:grid;grid-template-columns:3fr 1fr}.collection .page-header .sorting{display:flex;flex-direction:row;justify-content:flex-end;align-items:center;gap:12px;font-size:12px;text-transform:uppercase}.collection .page-header .sorting select{padding:4px 10px;border-radius:50px;cursor:pointer}.collection .page-header .sorting select:focus{outline:0}
