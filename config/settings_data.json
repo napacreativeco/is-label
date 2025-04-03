@@ -29,6 +29,7 @@
             "type": "release_slide",
             "settings": {
               "release_product": "test-vinyl",
+              "release_artist": "Privacy",
               "release_description": "This is the custom description for the Product Slide",
               "release_background_image": "shopify://shop_images/temp-background.jpg",
               "release_url_listen": "shopify://products/test-vinyl"
