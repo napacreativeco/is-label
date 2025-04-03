@@ -1,7 +1,49 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "current": {
     "customer_layout": "theme",
-    "example_option": "option"
+    "example_option": "option",
+    "sections": {
+      "hero": {
+        "type": "hero",
+        "blocks": {
+          "text_slide_hTm3z6": {
+            "type": "text_slide",
+            "settings": {
+              "text_title": "This is the title of a Text Slide",
+              "text_description": "This is the description of a Text Slide",
+              "text_background_image": "shopify://shop_images/blone-nobile.jpg",
+              "text_url": "shopify://products/test-vinyl",
+              "text_url_text": "View the Vinyl"
+            }
+          },
+          "release_slide_kJDH46": {
+            "type": "release_slide",
+            "settings": {
+              "release_product": "",
+              "release_description": "",
+              "release_url_listen": ""
+            }
+          }
+        },
+        "block_order": [
+          "text_slide_hTm3z6",
+          "release_slide_kJDH46"
+        ],
+        "settings": {
+          "show_hero": true
+        }
+      }
+    },
+    "content_for_index": []
   },
   "presets": {
     "Naked": {
