@@ -1,0 +1,112 @@
+{{ 'hero.css' | asset_url | stylesheet_tag }}
+
+<div id="hero" class="hero-swiper swiper">
+
+  <div class="swiper-wrapper">
+    {% for block in section.blocks %}
+
+        {% if block.type == 'text_slide' %}
+            {% render 'slide--text', block: block %}
+        {% endif %}
+
+        {% if block.type == 'release_slide' %}
+            {% render 'slide--release', block: block %}
+        {% endif %}
+
+    {% endfor %}
+  </div>
+
+  {% comment %}  
+  <div class="swiper-pagination-container">
+    <div class="swiper-pagination"></div>
+  </div>
+  {% endcomment %}
+
+  <div class="swiper-buttons desktop">
+    <div class="swiper-button-prev">
+        {% render 'icon--arrow-left', color: 'black' %}
+      </div>
+    
+      <div class="swiper-button-next">
+        {% render 'icon--arrow-right', color: 'black' %}
+      </div>
+  </div>
+
+
+</div>
+
+
+{% schema %}
+    {
+      "name": "Hero",
+      "tag": "section",
+      "class": "hero",
+      "settings": [
+        {
+          "type": "checkbox",
+          "id": "show_hero",
+          "label": "Show Hero",
+          "default": true
+        }
+      ],
+      "blocks": [
+        {
+          "name": "Release Slide",
+          "type": "release_slide",
+          "settings": [
+              {
+                  "type": "product",
+                  "id": "release_product",
+                  "label": "Product"
+              },
+              {
+                  "type": "text",
+                  "id": "release_description",
+                  "label": "Description"
+              },
+              {
+                  "type": "image_picker",
+                  "id": "release_background_image",
+                  "label": "BackgroundImage"
+              },
+              {
+                  "type": "url",
+                  "id": "release_url_listen",
+                  "label": "Listen URL"
+              }
+          ]
+        },
+        {
+          "name": "Text Slide",
+          "type": "text_slide",
+          "settings": [
+              {
+                  "type": "text",
+                  "id": "text_title",
+                  "label": "Title"
+              },
+              {
+                  "type": "text",
+                  "id": "text_description",
+                  "label": "Description"
+              },
+              {
+                  "type": "image_picker",
+                  "id": "text_background_image",
+                  "label": "Background Image"
+              },
+              {
+                  "type": "url",
+                  "id": "text_url",
+                  "label": "URL"
+              },
+              {
+                  "type": "text",
+                  "id": "text_url_text",
+                  "label": "URL Text"
+              }
+          ]
+        }
+      ]
+    }
+  {% endschema %}

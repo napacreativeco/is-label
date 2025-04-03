@@ -15,12 +15,16 @@
 
         <div class="right">
 
+            <div class="search-trigger">
+                {% render 'icon--search' %}
+            </div>
+
             <div class="login-trigger">
                 {% render 'icon--account' %}
             </div>
             
             <div class="mini-cart">
-                <span>{{ cart.item_count }}</span> {% render 'icon--cart' %}
+                <span class="count">{{ cart.item_count }}</span> {% render 'icon--cart' %}
             </div>
 
         </div>
@@ -29,6 +33,10 @@
 
     <div class="login-dropdown">
         {% render 'customer-login' %}
+    </div>
+
+    <div class="search-dropdown">
+        {% render 'search' %}
     </div>
 
 </header>

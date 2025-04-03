@@ -6,9 +6,11 @@ ul.products {
     padding: 0;
 
     li.product {
+
         .image {
             display: block;
             margin: 0 0 10px 0;
+            cursor: pointer;
         }
 
         img {
@@ -18,6 +20,10 @@ ul.products {
 
         .title {
             margin: 0 0 4px 0;
+        }
+
+        .price {
+            font-size: 14px;
         }
 
     }

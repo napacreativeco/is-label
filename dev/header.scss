@@ -6,31 +6,40 @@ header#navbar {
     left: 0;
     z-index: 9;
     background: var(--white);
+    border-bottom: 1px solid var(--grey);
 
     .wrap {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         align-items: center;
-        padding: 10px 20px;
+        padding: 20px var(--side-padding);
     }
 
-    ul {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-        gap: 8px;
-        list-style: none;
-        margin: 0;
-        padding: 0;
+    .left a {
+        text-transform: uppercase;
     }
 
     .center {
         display: flex;
         justify-content: center;
+
+        ul {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
         
         a {
             text-transform: uppercase;
+        }
+
+        a:hover {
+            text-decoration: underline;
         }
     }
 
@@ -39,30 +48,78 @@ header#navbar {
         flex-direction: row;
         align-items: center;
         justify-content: flex-end;
-        gap: 12px;
+        gap: 14px;
         
         svg {
             width: 20px;
         }
     
+        path {
+            stroke-width: 2px;
+        }
+
+        .search-trigger {
+            position: relative;
+            cursor: pointer;
+        }
+
         .login-trigger {
             position: relative;
+            cursor: pointer;
         }
 
         .mini-cart {
             display: flex;
             flex-direction: row;
             align-items: center;
-            gap: 4px;
+            gap: 2px;
+            position: relative;
+
+            .count {
+                position: absolute;
+                top: -2px;
+                right: -8px;
+                background: var(--black);
+                color: var(--white);
+                border-radius: 50px;
+                aspect-ratio: 1/1;
+                padding: 4px 6px;
+                font-size: 8px;
+            }
         }
 
     }
 
     .login-dropdown {
         display: none;
-        background: var(--white);
+        background: var(--black);
+        color: var(--white);
         z-index: 10;
-        padding: 0 20px 0 0;
+        padding: 10px 20px;
+        margin-right: var(--side-padding);
+
+        a {
+            cursor: pointer;
+            font-size: 14px;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    }
+
+    .search-dropdown {
+        display: none;
+        background: var(--black);
+        color: var(--white);
+        z-index: 10;
+        padding: 10px 10px;
+        margin-right: var(--side-padding);
+
+        a {
+            cursor: pointer;
+            font-size: 14px;
+        }
 
         a:hover {
             text-decoration: underline;

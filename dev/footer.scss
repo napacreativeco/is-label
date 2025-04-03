@@ -3,7 +3,11 @@ footer {
     flex-direction: column;
     align-items: center;
     gap: 12px;
-    margin: 20px 0 10px 0;
+    margin: 20px 0 0px 0;
+    background: var(--grey);
+    padding: 40px var(--side-padding) 30px var(--side-padding);
+    border-top-right-radius: 40px;
+    border-top-left-radius: 40px;
 
     ul {
         display: flex;
@@ -11,9 +15,15 @@ footer {
         align-items: center;
         justify-content: center;
         gap: 12px;
+        margin: 0 0 10px 0;
+
+        a {
+            text-transform: uppercase;
+        }
     }
 
     span {
-        font-size: 80%;
+        font-size: 60%;
+        text-transform: uppercase;
     }
 }

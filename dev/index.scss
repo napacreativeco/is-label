@@ -4,6 +4,9 @@
 :root {
     --white: #f9f9f9;
     --black: #2e2e2e;
+    --grey: #d6d6d6;
+
+    --side-padding: 40px;
 }
 
 body {
@@ -34,18 +37,25 @@ a {
     font-style: normal;
 }
 
-
 main[role="main"] {
-    margin-top: 60px;
+    margin-top: 100px;
+    margin-bottom: 80px;
 }
 
 .page-container {
-    padding: 0 20px;
+    padding: 0 var(--side-padding);
+    min-height: calc(100svh - 100px);
 }
 
 .page-header {
-    font-size: 28px;
-    margin: 0 0 30px 0;
+    margin: 0 0 34px 0;
+
+    h2 {
+        font-size: 20px;
+        border-bottom: 2px solid var(--black);
+        display: inline;
+        padding: 0 0 5px 0;
+    }
 }
 
 @media screen and (max-width: 767px) {
@@ -55,4 +65,5 @@ main[role="main"] {
 }
 
 @import './header.scss';
+@import './search.scss';
 @import './footer.scss';
