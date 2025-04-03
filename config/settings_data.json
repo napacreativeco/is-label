@@ -18,11 +18,11 @@
           "text_slide_hTm3z6": {
             "type": "text_slide",
             "settings": {
-              "text_title": "This is the title of a Text Slide",
-              "text_description": "This is the description of a Text Slide",
+              "text_title": "Blone Noble \"Life's New Adventure\" LP",
+              "text_description": "Available Now!",
               "text_background_image": "shopify://shop_images/blone-nobile.jpg",
-              "text_url": "shopify://products/test-vinyl",
-              "text_url_text": "View the Vinyl"
+              "text_url": "shopify://products/blone-noble-lifes-new-adventure-lp-is018",
+              "text_url_text": "Buy Now"
             }
           },
           "release_slide_kJDH46": {
