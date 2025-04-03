@@ -1,8 +1,7 @@
 <li class="product">
-    <div class="image">
-        <a href="{{ prod.url }}" title="{{ prod.title }}">
-            <img src="{{ prod.media[0] | image_url: width: '800' }}" alt="{{ prod.title }}" />
-        </a>
+    <div class="image" 
+         style="background: url('{{ prod.media[0] | image_url: width: '800' }}'); background-size: cover; background-position: center center;"
+         onclick="window.location='{{ prod.url }}';">
     </div>
     <div class="title">
         <h2>{{ prod.title | link_to: prod.url }}</h2>
