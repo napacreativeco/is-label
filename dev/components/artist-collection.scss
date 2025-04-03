@@ -1,10 +1,14 @@
 .artist-collection {
-    //padding-top: var(--side-padding);
+    padding-top: var(--side-padding);
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-gap: var(--side-padding);
 
     .artist-hero {
-        height: 50vh;
+        //height: 50vh;
         width: 100%;
         margin: 0 0 40px 0;
+        aspect-ratio: 3/4;
     }
 
     .artist-info {
@@ -50,6 +54,8 @@
 @media screen and (max-width: 767px) {
     
     .artist-collection {
+        grid-template-columns: 1fr;
+        
         .artist-info {
             grid-template-columns: 1fr;
         }
