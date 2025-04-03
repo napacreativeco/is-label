@@ -11,14 +11,14 @@
         padding: 0;
         display: grid;
         grid-template-columns: repeat(3, minmax(0, 1fr));
-        grid-gap: 12px;
+        grid-gap: 60px 12px;
     }
 
     .artist-card {
 
         .image {
             width: 100%;
-            aspect-ratio: 4/3;
+            aspect-ratio: 1/1;
             margin: 0 0 8px 0;
             cursor: pointer;
         }
