@@ -138,7 +138,7 @@
     <p>{{ product.description | newline_to_br }}</p>
   </div>
 
-  {% if product.metafields.music.credits != empty %}
+  {% if product.metafields.music.credits != blank %}
     <div class="credits" itemprop="description">
       <h3>Credits</h3>
       <p>{{ product.metafields.music.credits | metafield_tag }}</p>
