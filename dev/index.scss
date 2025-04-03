@@ -13,11 +13,12 @@ body {
     overflow-x: hidden;
     background: var(--white);
     color: var(--black);
-    font-family: sans-serif;
     font-family: "Inter", sans-serif;
+    font-size: 16px;
     font-optical-sizing: auto;
     font-weight: 300;
     font-style: normal;
+    letter-spacing: -0.05rem;
 }
 
 h1, h2, h3, h4, h5, h6 {

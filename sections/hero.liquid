@@ -16,19 +16,11 @@
     {% endfor %}
   </div>
 
-  {% comment %}  
-  <div class="swiper-pagination-container">
-    <div class="swiper-pagination"></div>
-  </div>
-  {% endcomment %}
-
-  <div class="swiper-buttons desktop">
+  <div class="swiper-buttons">
     <div class="swiper-button-prev">
-        {% render 'icon--arrow-left', color: 'black' %}
       </div>
     
       <div class="swiper-button-next">
-        {% render 'icon--arrow-right', color: 'black' %}
       </div>
   </div>
 
@@ -58,6 +50,11 @@
                   "type": "product",
                   "id": "release_product",
                   "label": "Product"
+              },
+              {
+                  "type": "text",
+                  "id": "release_artist",
+                  "label": "Artist name(s)"
               },
               {
                   "type": "text",
@@ -106,6 +103,11 @@
                   "label": "URL Text"
               }
           ]
+        }
+      ],
+      "presets": [
+        {
+          "name": "Hero"
         }
       ]
     }

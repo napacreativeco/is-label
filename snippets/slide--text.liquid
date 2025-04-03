@@ -1,3 +1,7 @@
-<div class="text-slide hero-slide" style="background: url('{{ block.settings.text_background_image | image_url }}'); background-size: cover; background-position: {{ block.settings.text_background_image.presentation.focal_point }};">
-    text slide
+<div class="text-slide hero-slide swiper-slide" style="background: url('{{ block.settings.text_background_image | image_url }}'); background-size: cover; background-position: {{ block.settings.text_background_image.presentation.focal_point }};">
+    <div class="text-box">
+        <h2>{{ block.settings.text_title }}</h2>
+        <p>{{ block.settings.text_description }}</p>
+        <a href="{{ block.settings.text_url }}">{{ block.settings.text_url_text }}</a>
+    </div>
 </div>

@@ -1,9 +1,102 @@
-#hero, .swiper {
+#hero {
     width: 100%;
-    height: 80svh;
     margin: 0 0 60px 0;
+    border-bottom: 1px solid var(--grey);
 
     .hero-slide {
         width: 100%;
     }
+
+    .swiper-buttons {
+        svg {
+            width: 20px;
+            height: 20px;
+        }
+
+        .swiper-button-next {
+            right: 20px;
+        }
+        
+        .swiper-button-prev {
+            left: 20px;
+        } 
+
+        .swiper-button-next::after {
+            right: 20px;
+            padding: 10px 14px 10px 17px;
+        }
+        
+        .swiper-button-prev::after {
+            left: 20px;
+            padding: 10px 17px 10px 14px;
+        } 
+
+        .swiper-button-prev, .swiper-button-next {
+            box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+            text-align: center;
+        }
+
+        .swiper-button-next::after, .swiper-button-prev::after {
+            color: var(--black);
+            background: var(--white);
+            border-radius: 50px;
+            font-size: 20px;
+            aspect-ratio: 1/1 !important;
+            display: block;
+            //padding: 10px 15px;
+            text-align: center;
+        }
+    }
+
+    .text-slide {
+        position: relative;
+
+        .text-box {
+            position: absolute;
+            bottom: 60px;
+            left: 80px;
+            background: var(--white);
+            color: var(--black);
+            padding: 40px 60px 40px 40px;
+            max-width: 40%;
+
+            h2 {
+                font-size: 24px;
+                margin: 0 0 10px 0;
+            }
+
+            p {
+                margin: 0 0 16px 0;
+            }
+
+            a {
+                border-bottom: 2px solid var(--black);
+                font-weight: 600;
+                text-transform: uppercase;
+            }
+        }
+    }
+
+    .release-slide {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+
+        .text {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .product-image {
+            width: 60%;
+            margin: 0 auto;
+            
+            img {
+                display: block;
+                width: 100%;
+            }
+        }
+    }
+
 }

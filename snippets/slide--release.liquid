@@ -1,3 +1,15 @@
-<div class="release-slide hero-slide" style="background: url('{{ block.settings.release_background_image | image_url }}'); background-size: cover; background-position: {{ block.settings.release_background_image.presentation.focal_point }};">
-    release slide
+<div class="release-slide hero-slide swiper-slide">
+    <div class="text">
+        <h2>{{ block.settings.release_product.description }}</h2>
+        <h3>{{ block.settings.release_product.title }}</h3>
+
+        <div class="product-image">
+            <img src="{{ block.settings.release_product.media[0] | image_url: width: '800' }}" />
+        </div>
+
+        <div class="button">
+            {{ block.settings.release_product.release_url_listen }}
+        </div>
+    </div>
+    <div class="image" style="background: url('{{ block.settings.release_background_image | image_url }}'); background-size: cover; background-position: {{ block.settings.release_background_image.presentation.focal_point }};"></div>
 </div>
