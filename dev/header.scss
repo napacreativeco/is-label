@@ -10,17 +10,24 @@ header#navbar {
 
     .wrap {
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: 2fr 1fr;
         align-items: center;
         padding: 20px var(--side-padding);
     }
 
-    .left a {
-        text-transform: uppercase;
-        font-weight: 900;
+    .left {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 20px;
+
+        .logo a {
+            text-transform: uppercase;
+            font-weight: 900;
+        }
     }
 
-    .center {
+    nav {
         display: flex;
         justify-content: center;
 
@@ -128,6 +135,10 @@ header#navbar {
         }
     }
 
+}
+
+header#navbar-mobile {
+    display: none;
 }
 
 @media screen and (max-width: 767px) {
