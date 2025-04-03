@@ -27,6 +27,7 @@
           },
           "release_slide_kJDH46": {
             "type": "release_slide",
+            "disabled": true,
             "settings": {
               "release_product": "test-vinyl",
               "release_artist": "Privacy",
