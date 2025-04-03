@@ -28,7 +28,10 @@ header#navbar {
     .center {
         display: flex;
         justify-content: center;
-        text-transform: uppercase
+        
+        a {
+            text-transform: uppercase;
+        }
     }
 
     .right {
