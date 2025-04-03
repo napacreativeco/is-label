@@ -10,6 +10,12 @@
     --side-padding: 40px;
 }
 
+@media screen and (max-width: 767px) {
+    :root {
+        --side-padding: 14px;
+    }
+}
+
 body {
     overflow-x: hidden;
     background: var(--white);
@@ -19,12 +25,12 @@ body {
     font-optical-sizing: auto;
     font-weight: 300;
     font-style: normal;
-    letter-spacing: -0.05rem;
+    letter-spacing: -0.02rem;
 }
 
 h1, h2, h3, h4, h5, h6 {
     font-family: "Inter", sans-serif;
-    font-weight: 600;
+    font-weight: 900;
     font-style: normal;
 }
 
@@ -48,6 +54,7 @@ main[role="main"] {
     min-height: calc(100svh - 100px);
 }
 
+
 .page-header {
     margin: 0 0 34px 0;
 
@@ -56,6 +63,7 @@ main[role="main"] {
         border-bottom: 2px solid var(--black);
         display: inline;
         padding: 0 0 5px 0;
+        font-weight: 900;
     }
 
     p {
@@ -71,5 +79,7 @@ main[role="main"] {
 }
 
 @import './header.scss';
+@import './header-mobile.scss';
+@import './mobile-menu.scss';
 @import './search.scss';
 @import './footer.scss';

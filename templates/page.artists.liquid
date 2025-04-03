@@ -2,4 +2,28 @@
 
 <div class="page-container artists-page">
 
+    <div class="page-header">
+        <h1>Current Artists</h1>
+    </div>
+
+    <ul class="artists">
+        {% for collection in collections %}
+
+            {% if collection.template_suffix == 'artist' %}
+                <li class="artist-card">
+
+                    <div class="image" 
+                         style="background: url('{{ collection.image | image_url: width: '700' }}'); background-size: cover; background-position: {{ collection.image.presentation.focal_point }};"
+                         onclick="window.location='{{ collection.url }}';"></div>
+                    
+                    <div class="name">
+                        <h2><a href="{{ collection.url }}" title="{{ collection.title }}">{{ collection.title }}</a></h2>
+                    </div>
+                    
+                </li>
+            {% endif %}
+    
+        {% endfor %}        
+    </ul>
+
 </div>

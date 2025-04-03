@@ -11,11 +11,19 @@
     ]
   },
   {
-    "name": "Example setting",
+    "name": "Social Media",
     "settings": [
       {
-        "type": "header",
-        "content": "Example option"
+        "type": "text",
+        "id": "instagram",
+        "label": "Instagram",
+        "default": "https://www.instagram.com/_industrystandards_"
+      },
+      {
+        "type": "text",
+        "id": "bandcamp",
+        "label": "Bandcamp",
+        "default": "https://industrystandards.bandcamp.com/"
       }
     ]
   }

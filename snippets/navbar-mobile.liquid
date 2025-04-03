@@ -1,0 +1,30 @@
+<header id="navbar-mobile">
+
+    <div class="wrap">
+
+        <div class="left">
+            <a id="site-title" class="headline" href="/">
+                {{ shop.name }}
+            </a>
+        </div>
+
+
+        <div class="right">
+
+            <div class="hamburger">
+                <div class="row">
+                    <div class="bar">&nbsp;</div>
+                    <div class="bar">&nbsp;</div>
+                    <div class="bar">&nbsp;</div>
+                </div>
+            </div>
+            
+            <div class="mini-cart">
+                <span class="count">{{ cart.item_count }}</span> {% render 'icon--cart' %}
+            </div>
+
+        </div>
+
+    </div>
+
+</header>

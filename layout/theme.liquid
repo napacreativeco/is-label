@@ -49,6 +49,8 @@
 <body id="{{ page_title | handle }}" class="{% if customer %}customer-logged-in {% endif %}template-{{ template | replace: '.', ' ' | truncatewords: 1, '' | handle }}" >
   
   {% render 'navbar' %}
+  {% render 'navbar-mobile' %}
+  {% render 'mobile-menu' %}
 
   <main role="main">
     {{ content_for_layout }}
@@ -145,6 +147,21 @@
       $('.mini-cart').on('click', function() {
           window.location = '/cart';
       });
+
+      /*
+        MOBILE NAV
+      */
+     $('.hamburger').on('click', function() {
+        $('.mobile-menu').css({
+          display: 'block'
+        });
+     });
+
+     $('.closer').on('click', function() {
+        $('.mobile-menu').css({
+          display: 'none'
+        });
+     });
 
     })(jQuery);
   </script>
