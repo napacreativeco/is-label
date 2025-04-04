@@ -32,7 +32,7 @@
 
     table {
         width: 100%;
-        margin: 0 0 60px 0;
+        margin: 0 0 40px 0;
     }
 
     tr {
@@ -81,6 +81,12 @@
             width: 24px;
             height: 24px;
         }
+
+        svg:hover {
+            path {
+                fill: var(--accent);
+            }
+        }
     }
 
     .checkout-buttons {
@@ -94,6 +100,7 @@
             color: var(--black);
             font-weight: 900;
             padding: 10px 20px;
+            border: 0;
         }
 
         input[name="checkout"] {
@@ -101,6 +108,7 @@
             color: var(--white);
             font-weight: 900;
             padding: 10px 20px;
+            border: 0;
         }
 
     }
