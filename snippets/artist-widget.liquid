@@ -1,21 +1,23 @@
 <link rel="stylesheet" href="{{ 'artist-widget.css' | asset_url }}" />
 
 <div class="artist-widget">
-    {% for collection in collections %}
+    <ul class="row">
+        {% for collection in collections %}
 
-        {% if collection.template_suffix == 'artist' %}
-            <li class="artist-card">
-
-                <div class="image" 
-                     style="background: url('{{ collection.image | image_url: width: '500' }}'); background-size: cover; background-position: {{ collection.image.presentation.focal_point }};"
-                     onclick="window.location='{{ collection.url }}';"></div>
-                
-                <div class="name">
-                    <h2><a href="{{ collection.url }}" title="{{ collection.title }}">{{ collection.title }}</a></h2>
-                </div>
-                
-            </li>
-        {% endif %}
-
-    {% endfor %}  
+            {% if collection.template_suffix == 'artist' %}
+                <li class="artist-card">
+    
+                    <div class="image" 
+                         style="background: url('{{ collection.image | image_url: width: '500' }}'); background-size: cover; background-position: {{ collection.image.presentation.focal_point }};"
+                         onclick="window.location='{{ collection.url }}';"></div>
+                    
+                    <div class="name">
+                        <h2><a href="{{ collection.url }}" title="{{ collection.title }}">{{ collection.title }}</a></h2>
+                    </div>
+                    
+                </li>
+            {% endif %}
+    
+        {% endfor %} 
+    </ul> 
 </div>
