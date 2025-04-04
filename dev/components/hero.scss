@@ -51,16 +51,24 @@
     }
 
     .text-slide {
-        position: relative;
+        
+
+        .box-wrap {
+            width: 100%;
+            max-width: 1600px;
+            margin: 0 auto;
+            position: relative;
+        }
 
         .text-box {
             position: absolute;
             bottom: 60px;
-            left: 80px;
+            left: auto;
             background: var(--white);
             color: var(--black);
             padding: 40px 60px 40px 40px;
-            max-width: 40%;
+            width: 40%;
+
 
             h2 {
                 font-size: 24px;
