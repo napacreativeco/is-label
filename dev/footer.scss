@@ -21,6 +21,11 @@ footer {
 
         .logo {
             display: block;
+
+            img {
+                display: block;
+                width: 150px;
+            }
         }
 
         .social {
@@ -64,6 +69,10 @@ footer {
             text-transform: uppercase;
             text-align: right;
         }
+    }
+
+    .attribution {
+        text-align: center;
     }
 
 }

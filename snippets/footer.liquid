@@ -7,6 +7,13 @@
             <div class="logo">
                 <img src="{{ settings.logo | image_url: width: '400'  }}" alt="{{ shop.name }}" />
             </div>
+            
+        </div>
+
+        <div class="right">
+            <div class="links">
+                {% render 'site-nav' %}
+            </div>
 
             <div class="social">
                 <ul>  
@@ -23,19 +30,12 @@
                     </li>
                 </ul>  
             </div>
-            
-        </div>
-
-        <div class="right">
-            <div class="links">
-                {% render 'site-nav' %}
-            </div>
-        
-            <span>
-                Copyright &copy; {{ "now" | date: "%Y" }} {{ shop.name }}
-            </span>
         </div>
 
     </div>
+
+    <span class="attribution">
+        Copyright &copy; {{ "now" | date: "%Y" }} {{ shop.name }}
+    </span>
 
 </footer>
