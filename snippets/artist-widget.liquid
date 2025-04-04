@@ -18,12 +18,23 @@
                     
                 </li>
             {% endif %}
+
+                <li class="view-all">
+                    <a href="/collections/all-artists" title="View all artists">
+                        <div class="arrow">
+                            <svg width="14" height="12" viewBox="0 0 14 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M13 6L7.5 0.75V3.75C2.23656 3.75 1 7.52406 1 11.25C2.51906 9.305 3.8625 8.25 7.5 8.25V11.25L13 6Z" stroke="black" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <span>View All</span>
+                    </a>
+                </li>
     
         {% endfor %} 
     </ul> 
 
     <div class="artist-buttons">
-        
+
         <div id="artist-button-prev">
             {% render 'icon--arrow-left' %}
         </div>
