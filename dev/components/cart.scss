@@ -71,6 +71,16 @@
         display: flex;
         flex-direction: column;
         align-items: flex-end;
+        gap: 14px;
+
+        .price {
+            font-weight: 900;
+            font-size: 24px;
+        }
+
+        a:hover {
+            color: var(--accent);
+        }
     }
 
 }
