@@ -101,6 +101,9 @@
     }
 
     .mobile-menu-social {
+        position: absolute;
+        bottom: var(--side-padding);
+        
         svg {
             width: 30px;
             height: 30px;
