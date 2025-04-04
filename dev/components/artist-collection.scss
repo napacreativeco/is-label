@@ -54,11 +54,22 @@
 
     .artist-products {
 
+        h2 {
+            text-transform: uppercase;
+            border-bottom: 2px solid var(--black);
+            margin: 0 0 20px 0;
+        }
+
         ul {
             list-style: none;
             display: grid;
             grid-template-columns: repeat(4, minmax(0, 1fr));
             grid-gap: 40px 12px;
+
+            .image {
+                width: 100%;
+                aspect-ratio: 1/1;
+            }
         }
     }
 
