@@ -103,6 +103,13 @@
     .mobile-menu-social {
         position: absolute;
         bottom: var(--side-padding);
+
+        ul {
+            list-style: none;
+            display: flex;
+            flex-direction: row;
+            gap: 14px;
+        }
         
         svg {
             width: 30px;
