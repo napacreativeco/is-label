@@ -136,3 +136,22 @@
     }
 
 }
+
+@media screen and (max-width: 767px) {
+
+    .cart-page {
+        tr {
+            display: grid;
+            grid-template-columns: 6fr 2fr 1fr auto;
+            align-items: center;
+            grid-gap: 14px;
+            border-bottom: 2px solid var(--black);
+            padding: 20px 0;
+        }
+
+        .image {
+            display: none;
+        }
+    }
+
+}
