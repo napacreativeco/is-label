@@ -10,72 +10,67 @@ footer {
     border-top-left-radius: 40px;
 
     .row {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        align-items: flex-end;
-        grid-gap: 40px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
         width: 100%;
     }
 
-    .left {
+ 
 
-        .logo {
+    .logo {
+        display: block;
+
+        img {
             display: block;
-
-            img {
-                display: block;
-                width: 150px;
-            }
-        }
-
-    }
-
-    .right {
-        .links {
-            ul {
-                display: flex;
-                flex-direction: row;
-                align-items: center;
-                justify-content: flex-end;
-                gap: 12px;
-                margin: 0 0 10px 0;
-        
-                a {
-                    text-transform: uppercase;
-                }
-            }
-        }
-
-        .social {
-    
-            ul {
-                list-style: none;
-                display: flex;
-                flex-direction: row;
-                align-items: center;
-                justify-content: flex-end;
-                gap: 14px;
-                margin: 0;
-                padding: 0;
-    
-                svg {
-                    width: 20px;
-                    height: 20px;
-                }
-            }
-        
-        }
-
-    
-        span {
-            font-size: 60%;
-            text-transform: uppercase;
-            text-align: right;
+            width: 150px;
         }
     }
+
+
+
+
+    .links {
+        ul {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: flex-end;
+            gap: 12px;
+            margin: 0 0 10px 0;
+    
+            a {
+                text-transform: uppercase;
+            }
+        }
+    }
+
+    .social {
+
+        ul {
+            list-style: none;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: flex-end;
+            gap: 14px;
+            margin: 0;
+            padding: 0;
+
+            svg {
+                width: 20px;
+                height: 20px;
+            }
+        }
+    
+    }
+    
 
     .attribution {
         text-align: center;
+        font-size: 10px;
+        text-transform: uppercase;
     }
 
 }

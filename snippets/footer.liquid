@@ -2,34 +2,29 @@
 
     <div class="row">
 
-        <div class="left">
-
-            <div class="logo">
-                <img src="{{ settings.logo | image_url: width: '400'  }}" alt="{{ shop.name }}" />
-            </div>
+        <div class="logo">
+            <img src="{{ settings.logo | image_url: width: '400'  }}" alt="{{ shop.name }}" />
+        </div>
             
+
+        <div class="links">
+            {% render 'site-nav' %}
         </div>
 
-        <div class="right">
-            <div class="links">
-                {% render 'site-nav' %}
-            </div>
-
-            <div class="social">
-                <ul>  
-                    <li class="link bandcamp">
-                        <a href="{{ settings.bandcamp }}" title="Bandcamp">
-                            {% render 'icon--bandcamp' %}
-                        </a>
-                    </li>
-        
-                    <li class="link instagram">
-                        <a href="{{ settings.instagram }}" title="Instagram">
-                            {% render 'icon--instagram' %}
-                        </a>
-                    </li>
-                </ul>  
-            </div>
+        <div class="social">
+            <ul>  
+                <li class="link bandcamp">
+                    <a href="{{ settings.bandcamp }}" title="Bandcamp">
+                        {% render 'icon--bandcamp' %}
+                    </a>
+                </li>
+    
+                <li class="link instagram">
+                    <a href="{{ settings.instagram }}" title="Instagram">
+                        {% render 'icon--instagram' %}
+                    </a>
+                </li>
+            </ul>  
         </div>
 
     </div>
