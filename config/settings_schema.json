@@ -6,6 +6,11 @@
         "type": "image_picker",
         "id": "logo",
         "label": "Logo"
+      },
+      {
+        "type": "image_picker",
+        "id": "logo_strip",
+        "label": "Logo Strip"
       }
     ]
   },
