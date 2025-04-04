@@ -1,5 +1,5 @@
 .single-product {
-    
+    margin-top: 80px;
 
     .back-button {
         margin: 0 0 14px 0;
@@ -33,7 +33,6 @@
         display: grid;
         grid-template-columns: repeat(2, minmax(0, 1fr));
         grid-gap: 20px;
-        padding-top: 80px;
 
         .left {
 
