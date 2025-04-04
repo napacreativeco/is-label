@@ -148,3 +148,14 @@
     }
 
 }
+
+@media screen and (max-width: 767px) {
+    #hero {
+
+        .text-slide {
+            .text-box {
+                width: 100%;
+            }
+        }
+    }
+}
