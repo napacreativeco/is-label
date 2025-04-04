@@ -150,7 +150,11 @@
         }
 
         .checkout-buttons {
-            flex-direction: column;
+            flex-direction: column-reverse;
+
+            input[name="update"] {
+                padding: 20px;
+            }
 
             input[name="checkout"] {
                 width: 100%;
