@@ -4,9 +4,13 @@
         <div class="left">
 
             <div class="logo">
-                <a id="site-title" class="headline" href="/">
-                    {{ shop.name }}
-                </a>
+                {% if settings.logo_strip %}
+                    <img src="{{ settings.logo_strip | image_url: width: '700' }}" alt="{{ shop.name }}" />
+                {% else %}
+                    <a id="site-title" class="headline" href="/">
+                        {{ shop.name }}
+                    </a>
+                {% endif %}
             </div>
 
             {% render 'site-nav' %}
