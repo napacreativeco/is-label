@@ -54,10 +54,11 @@
 
     .artist-products {
 
-        h2 {
+        h3 {
             text-transform: uppercase;
             border-bottom: 2px solid var(--black);
             margin: 0 0 20px 0;
+            display: inline;
         }
 
         ul {
@@ -69,6 +70,7 @@
             .image {
                 width: 100%;
                 aspect-ratio: 1/1;
+                margin: 0 0 10px 0;
             }
         }
     }
