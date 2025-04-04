@@ -35,6 +35,32 @@
         cursor: not-allowed;
     }
 
-    
+    .back-button {
+        margin: 0 0 14px 0;
+        display: inline-block;
+
+        a {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 6px;
+            font-size: 14px;
+
+            svg {
+                width: 14px;
+            }
+        }
+
+        a:hover {
+            color: var(--accent);
+
+            svg {
+                path {
+                    fill: var(--accent);
+                }
+            }
+        }
+
+    }
 
 }
