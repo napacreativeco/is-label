@@ -98,8 +98,11 @@
 
     .artist-widget {
         #artist-button-prev, #artist-button-next {
-            width: 30px;
-            height: 40px;
+            
+            svg {
+                width: 30px;
+                height: 40px;
+            }
         }
         
     }
