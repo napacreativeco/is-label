@@ -28,6 +28,24 @@ footer {
             }
         }
 
+    }
+
+    .right {
+        .links {
+            ul {
+                display: flex;
+                flex-direction: row;
+                align-items: flex-end;
+                justify-content: center;
+                gap: 12px;
+                margin: 0 0 10px 0;
+        
+                a {
+                    text-transform: uppercase;
+                }
+            }
+        }
+
         .social {
     
             ul {
@@ -48,21 +66,6 @@ footer {
         
         }
 
-    }
-
-    .right {
-        ul {
-            display: flex;
-            flex-direction: row;
-            align-items: flex-end;
-            justify-content: center;
-            gap: 12px;
-            margin: 0 0 10px 0;
-    
-            a {
-                text-transform: uppercase;
-            }
-        }
     
         span {
             font-size: 60%;
