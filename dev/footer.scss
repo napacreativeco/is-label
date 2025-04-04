@@ -4,10 +4,9 @@ footer {
     align-items: center;
     gap: 12px;
     margin: 20px 0 0px 0;
-    background: var(--grey);
     padding: 40px var(--side-padding) 30px var(--side-padding);
-    border-top-right-radius: 40px;
-    border-top-left-radius: 40px;
+    // border-top-right-radius: 40px;
+    // border-top-left-radius: 40px;
 
     .row {
         display: flex;
@@ -21,15 +20,13 @@ footer {
 
     .logo {
         display: block;
+        margin: 0 0 20px 0;
 
         img {
             display: block;
             width: 150px;
         }
     }
-
-
-
 
     .links {
         ul {
@@ -38,7 +35,6 @@ footer {
             align-items: center;
             justify-content: flex-end;
             gap: 12px;
-            margin: 0 0 10px 0;
     
             a {
                 text-transform: uppercase;
@@ -47,6 +43,7 @@ footer {
     }
 
     .social {
+        margin: 0 0 20px 0;
 
         ul {
             list-style: none;
