@@ -86,15 +86,17 @@
         {% assign hide_default_title = true %}
       {% endif %}       
 
-      <div class="variants" id="product-variants" class="{% if hide_default_title %} hidden{% endif %}">
-        <select id="product-select" name="id">
-        {% for variant in product.variants %}
-          <option{% if variant == product.selected_or_first_available_variant %} selected{% endif %} value="{{ variant.id }}">
-          {{ variant.title }} - {{ variant.price | money }}
-          </option>
-        {% endfor %}
-        </select>
-      </div>        
+      {% unless product.has_only_default_variant %}
+        <div class="variants" id="product-variants" class="{% if hide_default_title %} hidden{% endif %}">
+          <select id="product-select" name="id">
+          {% for variant in product.variants %}
+            <option{% if variant == product.selected_or_first_available_variant %} selected{% endif %} value="{{ variant.id }}">
+            {{ variant.title }} - {{ variant.price | money }}
+            </option>
+          {% endfor %}
+          </select>
+        </div>        
+      {% endunless %}
         
       <div class="add-to-cart" id="product-add">
         <input type="submit" name="add" id="add" value="{{ add_to_cart | escape }}">
