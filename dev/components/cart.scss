@@ -36,14 +36,21 @@
 
     tr {
         display: grid;
-        grid-template-columns: 1fr 6fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 6fr 2fr 1fr 1fr;
         align-items: center;
         grid-gap: 14px;
         border-bottom: 2px solid var(--black);
         padding: 20px 0;
     }
 
+    .price {
+        text-align: center;
+    }
+
     .quantity {
+        display: flex;
+        justify-content: flex-end;
+
         input[type="number"] {
             width: 50px;
             padding: 5px;
