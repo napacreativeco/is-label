@@ -97,7 +97,17 @@
 @media screen and (max-width: 767px) {
 
     .artist-widget {
-        #artist-button-prev, #artist-button-next {
+
+        #artist-button-prev {
+
+            svg {
+                width: 30px;
+                height: 40px;
+            }
+            
+        }
+        
+        #artist-button-next {
             
             svg {
                 width: 30px;
