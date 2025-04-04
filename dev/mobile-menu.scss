@@ -104,6 +104,10 @@
         position: absolute;
         bottom: var(--side-padding);
 
+        .wrap {
+            padding: 0;
+        }
+
         ul {
             list-style: none;
             display: flex;
