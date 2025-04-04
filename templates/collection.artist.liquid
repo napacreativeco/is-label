@@ -2,30 +2,32 @@
 
 <div class="page-container artist-collection">
 
-    <div class="artist-hero" style="background: url('{{ collection.featured_image | image_url: width: '800' }}'); background-size: cover; background-position: {% if collection.featured_image.presentation.focal_point %}{{ collection.featured_image.presentation.focal_point }}{% else %}center center{% endif %};"></div>
+    <div class="row">
+        <div class="artist-hero" style="background: url('{{ collection.featured_image | image_url: width: '800' }}'); background-size: cover; background-position: {% if collection.featured_image.presentation.focal_point %}{{ collection.featured_image.presentation.focal_point }}{% else %}center center{% endif %};"></div>
 
-    <div class="artist-info">
-        
-        <div class="left">
-            <h1 class="name">{{ collection.title }}</h1>
-
-            <p class="artist-description">
-                {{ collection.description }}
-            </p>
-
-        </div>
-
-        <div class="right">
+        <div class="artist-info">
+            
+            <div class="left">
+                <h1 class="name">{{ collection.title }}</h1>
     
-            {% if collection.metafields.artist.artist_socials %}
-                <div class="follow">
-                    <h3>Follow</h3>
-                    {{ collection.metafields.artist.artist_socials | metafield_tag }}
-                </div>
-            {% endif %}
-
+                <p class="artist-description">
+                    {{ collection.description }}
+                </p>
+    
+            </div>
+    
+            <div class="right">
+        
+                {% if collection.metafields.artist.artist_socials %}
+                    <div class="follow">
+                        <h3>Follow</h3>
+                        {{ collection.metafields.artist.artist_socials | metafield_tag }}
+                    </div>
+                {% endif %}
+    
+            </div>
+    
         </div>
-
     </div>
 
     <div class="artist-products">
@@ -48,6 +50,5 @@
             {% endfor %}
         </ul>
     </div>
-
 
 </div>

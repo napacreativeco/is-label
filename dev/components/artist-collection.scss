@@ -1,9 +1,12 @@
 .artist-collection {
     padding-top: var(--side-padding);
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    grid-gap: var(--side-padding);
 
+    .row {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        grid-gap: var(--side-padding);
+    }
+    
     .artist-hero {
         //height: 50vh;
         width: 100%;
