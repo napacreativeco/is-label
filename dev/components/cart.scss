@@ -108,6 +108,11 @@
             color: var(--black);
             padding: 10px 20px 10px 0;
             border: 0;
+            cursor: pointer;
+        }
+
+        input[name="update"]:hover {
+            color: var(--accent);
         }
 
         input[name="checkout"] {
@@ -117,6 +122,11 @@
             padding: 10px 40px;
             border: 0;
             text-transform: uppercase;
+            cursor: pointer;
+        }
+
+        input[name="checkout"]:hover {
+            color: var(--accent);
         }
 
     }
