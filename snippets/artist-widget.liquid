@@ -2,7 +2,7 @@
 
 <div class="artist-widget">
     <h3>Artists</h3>
-    <ul class="row">
+    <ul class="row" id="artist-row">
         {% for collection in collections %}
 
             {% if collection.template_suffix == 'artist' %}
@@ -21,4 +21,40 @@
     
         {% endfor %} 
     </ul> 
+
+    <div id="artist-button-next">
+        {% render 'icon--arrow-right' %}
+    </div>
+
+    <div id="artist-button-prev">
+        {% render 'icon--arrow-left' %}
+    </div>
+
 </div>
+
+<script>
+
+    var news_btn_left = document.getElementById('artist-button-prev');
+    var news_btn_right = document.getElementById('artist-button-next');
+    var news_content = document.getElementById('artist-row');
+
+    const news_content_scroll_width = news_content.scrollWidth;
+    let news_content_scoll_left = news_content.scrollLeft;
+
+    news_btn_right.addEventListener('click', () => {
+        news_content_scoll_left += 250;
+        if (news_content_scoll_left >= news_content_scroll_width) { 
+        news_content_scoll_left = news_content_scroll_width; 
+        }
+        news_content.scrollLeft = news_content_scoll_left;
+    });
+
+    news_btn_left.addEventListener('click', () => {
+        news_content_scoll_left -= 250;
+        if (news_content_scoll_left <= 0) {
+            news_content_scoll_left = 0;
+        }
+        news_content.scrollLeft = news_content_scoll_left;
+    });
+
+</script>
