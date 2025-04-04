@@ -49,6 +49,16 @@
 
     }
 
+    .artist-products {
+
+        ul {
+            list-style: none;
+            display: grid;
+            grid-template-columns: repeat(4, minmax(0, 1fr));
+            grid-gap: 40px 12px;
+        }
+    }
+
 }
 
 @media screen and (max-width: 767px) {
