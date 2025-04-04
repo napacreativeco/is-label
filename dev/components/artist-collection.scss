@@ -13,7 +13,7 @@
 
     .artist-info {
         display: grid;
-        grid-template-columns: 3fr 1fr;
+        grid-template-columns: minmax(0, 3fr) minmax(0, 1fr);
         gap: var(--side-padding);
     }
 
@@ -54,7 +54,6 @@
 @media screen and (max-width: 767px) {
     
     .artist-collection {
-        padding-top: 40px;
         grid-template-columns: 1fr;
         
         .artist-info {

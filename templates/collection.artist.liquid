@@ -16,11 +16,13 @@
         </div>
 
         <div class="right">
-        
-            <div class="follow">
-                <h3>Follow</h3>
-                {{ collection.metafields.artist.artist_socials | metafield_tag }}
-            </div>
+    
+            {% if collection.metafields.artist.artist_socials %}
+                <div class="follow">
+                    <h3>Follow</h3>
+                    {{ collection.metafields.artist.artist_socials | metafield_tag }}
+                </div>
+            {% endif %}
 
         </div>
 
