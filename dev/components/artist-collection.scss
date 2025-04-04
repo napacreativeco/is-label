@@ -81,7 +81,11 @@
 @media screen and (max-width: 767px) {
     
     .artist-collection {
-        grid-template-columns: 1fr;
+
+        .row {
+            grid-template-columns: 1fr;
+        }
+        
         
         .artist-info {
             grid-template-columns: 1fr;
