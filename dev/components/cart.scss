@@ -32,6 +32,7 @@
 
     table {
         width: 100%;
+        margin: 0 0 60px 0;
     }
 
     tr {
@@ -80,6 +81,28 @@
             width: 24px;
             height: 24px;
         }
+    }
+
+    .checkout-buttons {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 4px;
+
+        input[name="update"] {
+            background: var(--grey);
+            color: var(--black);
+            font-weight: 900;
+            padding: 10px 20px;
+        }
+
+        input[name="checkout"] {
+            background: var(--black);
+            color: var(--white);
+            font-weight: 900;
+            padding: 10px 20px;
+        }
+
     }
 
 }
