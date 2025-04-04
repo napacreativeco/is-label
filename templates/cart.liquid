@@ -68,11 +68,14 @@
               <input type="number" name="updates[]" id="updates_{{ item.id }}" class="quantity" value="{{ item.quantity }}" />
             </td>
 
-            <td class="price">
-              {{ item.final_line_price | money_without_trailing_zeros }}
-            </td>
 
-            <td class="remove">
+
+            <td class="last">
+
+              <div class="price">
+                {{ item.final_line_price | money_without_trailing_zeros }}
+              </div>
+
               <a href="/cart/change?line={{ forloop.index }}&quantity=0">Remove</a>
             </td>
 

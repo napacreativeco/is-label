@@ -67,8 +67,10 @@
         }
     }
 
-    .remove {
-        text-align: right;
+    .last {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
     }
 
 }
