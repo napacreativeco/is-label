@@ -8,7 +8,7 @@
                 <li class="artist-card">
     
                     <div class="image" 
-                         style="background: url('{{ collection.image | image_url: width: '500' }}'); background-size: cover; background-position: {{ collection.image.presentation.focal_point }};"
+                         style="background: url('{{ collection.image | image_url: width: '500' }}'); background-size: cover; background-position: {% if collection.featured_image.presentation.focal_point %}{{ collection.featured_image.presentation.focal_point }}{% else %}center center{% endif %};"
                          onclick="window.location='{{ collection.url }}';"></div>
                     
                     <div class="name">
