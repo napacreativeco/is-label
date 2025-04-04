@@ -21,10 +21,20 @@ header#navbar {
         align-items: center;
         gap: 20px;
 
-        .logo a {
-            text-transform: uppercase;
-            font-weight: 900;
+        .logo {
+
+            a {
+                text-transform: uppercase;
+                font-weight: 900;
+            }
+
+            img {
+                width: 100%;
+                max-width: 270px;
+            }
         }
+
+        .logo 
     }
 
     nav {
