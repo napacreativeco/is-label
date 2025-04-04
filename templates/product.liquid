@@ -86,7 +86,9 @@
         {% assign hide_default_title = true %}
       {% endif %}       
 
-      {% unless product.has_only_default_variant %}
+      {% if product.has_only_default_variant %}
+        <input type="hidden" name="id" value="{{ product.variants.first.id }}">
+      {% else %}
         <div class="variants" id="product-variants" class="{% if hide_default_title %} hidden{% endif %}">
           <select id="product-select" name="id">
           {% for variant in product.variants %}
@@ -96,7 +98,7 @@
           {% endfor %}
           </select>
         </div>        
-      {% endunless %}
+      {% endif %}
         
       <div class="add-to-cart" id="product-add">
         <input type="submit" name="add" id="add" value="{{ add_to_cart | escape }}">
