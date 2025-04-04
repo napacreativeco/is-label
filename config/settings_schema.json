@@ -1,12 +1,11 @@
 [
   {
-    "name": "Address",
+    "name": "Logo",
     "settings": [
       {
-        "type": "text",
-        "id": "address",
-        "label": "Address",
-        "default": "1234 Example St, City, State, 12345"
+        "type": "image_picker",
+        "id": "logo",
+        "label": "Logo"
       }
     ]
   },
