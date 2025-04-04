@@ -97,7 +97,11 @@
 @media screen and (max-width: 767px) {
 
     .artist-widget {
-        justify-content: space-between;
+
+        .artist-buttons {
+            justify-content: space-between;
+        }
+        
 
         #artist-button-prev {
 
