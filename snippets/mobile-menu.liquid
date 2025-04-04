@@ -9,9 +9,13 @@
         </div>
 
         <div class="menu-header">
-            <a id="site-title" class="headline" href="/">
-                {{ shop.name }}
-            </a>
+            {% if settings.logo_strip %}
+                <img src="{{ settings.logo_strip | image_url: width: '700' }}" alt="{{ shop.name }}" />
+            {% else %}
+                <a id="site-title" class="headline" href="/">
+                    {{ shop.name }}
+                </a>
+            {% endif %}
         </div>
 
         <div class="search">
