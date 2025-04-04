@@ -96,12 +96,9 @@
         gap: 4px;
 
         input[name="update"] {
-            background: var(--grey);
             color: var(--black);
-            font-weight: 900;
-            padding: 10px 20px;
+            padding: 10px 20px 10px 0;
             border: 0;
-            text-transform: uppercase;
         }
 
         input[name="checkout"] {
