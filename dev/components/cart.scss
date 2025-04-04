@@ -89,6 +89,12 @@
         }
     }
 
+    .totals {
+        span {
+            font-weight: 900;
+        }
+    }
+
     .checkout-buttons {
         display: flex;
         flex-direction: row;

@@ -91,20 +91,13 @@
       </table>
       
       <div class="totals">
-        <h3>Subtotal <em>{{ cart.total_price | money }}</em></h3>
+        <p>Subtotal <span>{{ cart.total_price | money_without_trailing_zeros }}</span></p>
       </div>
       
       <div class="checkout-buttons">
         <input type="submit" name="update" value="Update cart" />
         <input type="submit" name="checkout" value="Check out" />   
       </div>
-      
-      <div class="additional-buttons">
-        {% if additional_checkout_buttons %}
-          {{ content_for_additional_checkout_buttons }}
-        {% endif %}
-      </div>
-
 
     </form>
 
