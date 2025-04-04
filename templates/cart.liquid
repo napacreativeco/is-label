@@ -48,20 +48,22 @@
               {% comment %}
               Line Item Properties
               {% endcomment %}
-              {% assign properties_amount = item.properties | size %}
-              {% if properties_amount > 0 %}
-                {% for p in item.properties %}
-                  {% unless p.last == blank %}
-                    {{ p.first }}:
-                    {% if p.last contains '/uploads/' %}
-                      <a href="{{ p.last }}">{{ p.last | split: '/' | last }}</a>
-                    {% else %}
-                      {{ p.last }}
-                    {% endif %}
-                  {% endunless %}
-                {% endfor %}
-              {% endif %}
-              <h3>{{ item.vendor }}</h3>
+              <div class="properties">
+                {% assign properties_amount = item.properties | size %}
+                {% if properties_amount > 0 %}
+                  {% for p in item.properties %}
+                    {% unless p.last == blank %}
+                      {{ p.first }}:
+                      {% if p.last contains '/uploads/' %}
+                        <a href="{{ p.last }}">{{ p.last | split: '/' | last }}</a>
+                      {% else %}
+                        {{ p.last }}
+                      {% endif %}
+                    {% endunless %}
+                  {% endfor %}
+                {% endif %}
+              </div>
+
             </td>
 
             <td class="quantity">

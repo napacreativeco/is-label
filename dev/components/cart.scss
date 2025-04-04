@@ -43,6 +43,12 @@
         padding: 20px 0;
     }
 
+    .title {
+        .properties {
+            margin: 14px 0 0 0;
+        }
+    }
+
     .price {
         text-align: center;
     }
@@ -69,6 +75,8 @@
 
     .remove {
         text-align: right;
+        width: 24px;
+        height: 24px;
     }
 
 }
