@@ -131,10 +131,6 @@
 
     }
 
-    .additional-buttons {
-        margin: 20px 0 0 0;
-    }
-
 }
 
 @media screen and (max-width: 767px) {
@@ -151,6 +147,14 @@
 
         .image {
             display: none;
+        }
+
+        .checkout-buttons {
+            flex-direction: column;
+
+            input[name="checkout"] {
+                width: 100%;
+            }
         }
     }
 
