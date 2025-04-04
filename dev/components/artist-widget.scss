@@ -1,12 +1,13 @@
 .artist-widget {
+    margin-top: 80px;
 
     h3 {
         font-weight: 900;
         font-size: 20px;
         border-bottom: 2px solid var(--black);
         padding: 0 0 5px 0;
-        display: inline;
-        margin: 0 0 26px 0;
+        display: inline-block;
+        margin: 0px 0 26px 0;
     }
     
     .row {
