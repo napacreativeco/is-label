@@ -84,12 +84,13 @@
 
         .row {
             grid-template-columns: 1fr;
+            margin: 0 0 40px 0;
         }
         
         
         .artist-info {
             grid-template-columns: 1fr;
-            margin: 0 0 40px 0;
+            
         }
 
         .artist-products {
