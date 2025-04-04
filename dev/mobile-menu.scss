@@ -41,6 +41,12 @@
 
     .menu-header {
         margin: 0 0 20px 0;
+
+        img {
+            display: block;
+            width: 80%;
+            filter: invert(1);
+        }
         
         a {
             font-weight: 900;
