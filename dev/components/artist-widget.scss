@@ -18,8 +18,8 @@
         gap: 12px;
         overflow-x: scroll;
         padding: 0 0 30px 0;
-        scrollbar-color: var(--black) rgba(0, 0, 0, 0.0);
-        scrollbar-width: thin;
+        -ms-overflow-style: none;  /* IE and Edge */
+        scrollbar-width: none;  /* Firefox */
         scroll-behavior: smooth;
     
 
@@ -35,6 +35,10 @@
         }
 
     }
+
+    .row::-webkit-scrollbar {
+        display: none;
+      }
 
     .artist-buttons {
         display: flex;
