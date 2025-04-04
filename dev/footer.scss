@@ -33,7 +33,7 @@ footer {
         text-transform: uppercase;
     }
 
-    div.social-footer {
+    .social-media {
         position: absolute;
         bottom: var(--side-padding);
     
@@ -45,6 +45,10 @@ footer {
             gap: 20px;
             margin: 0;
             padding: 0;
+
+            svg {
+                width: 30px;
+            }
         }
     
     }
