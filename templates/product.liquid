@@ -104,19 +104,23 @@
         <input type="submit" name="add" id="add" value="{{ add_to_cart | escape }}">
       </div>
 
-      <div class="tracklist">
-        <h3>Tracklist</h3>
-        <ol>
-          {% for track in product.metafields.music.tracklisting.value %}
-          <li>{{ track }}</li>
-          {% endfor %}
-        </ol>
-      </div>
+      {% if product.metafields.music.tracklisting %}
+        <div class="tracklist">
+          <h3>Tracklist</h3>
+          <ol>
+            {% for track in product.metafields.music.tracklisting.value %}
+            <li>{{ track }}</li>
+            {% endfor %}
+          </ol>
+        </div>
+      {% endif %}
 
-      <div class="release-date">
-        <h3>Release Date</h3>
-        <span>{{ product.metafields.music.release_date | date: "%B %d, %Y" }}</span>
-      </div>
+      {% if product.metafields.music.release_date %}
+        <div class="release-date">
+          <h3>Release Date</h3>
+          <span>{{ product.metafields.music.release_date | date: "%B %d, %Y" }}</span>
+        </div>
+      {% endif %}
 
     </div>
       
