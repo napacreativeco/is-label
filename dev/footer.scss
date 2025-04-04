@@ -16,24 +16,6 @@ footer {
         grid-gap: 40px;
     }
 
-    ul {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-        gap: 12px;
-        margin: 0 0 10px 0;
-
-        a {
-            text-transform: uppercase;
-        }
-    }
-
-    span {
-        font-size: 60%;
-        text-transform: uppercase;
-    }
-
     .left {
 
         .logo {
@@ -48,7 +30,7 @@ footer {
                 flex-direction: row;
                 align-items: center;
                 justify-content: flex-start;
-                gap: 20px;
+                gap: 14px;
                 margin: 0;
                 padding: 0;
     
@@ -60,6 +42,26 @@ footer {
         
         }
 
+    }
+
+    .right {
+        ul {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+            margin: 0 0 10px 0;
+    
+            a {
+                text-transform: uppercase;
+            }
+        }
+    
+        span {
+            font-size: 60%;
+            text-transform: uppercase;
+        }
     }
 
 }
