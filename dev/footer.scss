@@ -9,6 +9,12 @@ footer {
     border-top-right-radius: 40px;
     border-top-left-radius: 40px;
 
+    .row {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: flex-end;
+    }
+
     ul {
         display: flex;
         flex-direction: row;
