@@ -91,7 +91,7 @@
 
     .totals {
         margin: 0 0 20px 0;
-        
+
         span {
             font-weight: 900;
         }
@@ -104,6 +104,7 @@
         gap: 4px;
 
         input[name="update"] {
+            background: transparent;
             color: var(--black);
             padding: 10px 20px 10px 0;
             border: 0;
