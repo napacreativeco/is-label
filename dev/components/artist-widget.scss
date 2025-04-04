@@ -93,3 +93,15 @@
     }
     
 }
+
+@media screen and (max-width: 767px) {
+
+    .artist-widget {
+        #artist-button-prev, #artist-button-next {
+            width: 30px;
+            height: 40px;
+        }
+        
+    }
+
+}
