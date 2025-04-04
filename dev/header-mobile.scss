@@ -15,9 +15,18 @@ header#navbar-mobile {
         padding: 20px var(--side-padding);
     }
 
-    .left a {
-        text-transform: uppercase;
-        font-weight: 900;
+    .left {
+
+        img {
+            display: block;
+            width: 100%;
+        }
+
+        a {
+            text-transform: uppercase;
+            font-weight: 900;
+        }
+
     }
 
     .right {
