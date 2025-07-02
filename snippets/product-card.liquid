@@ -1,6 +1,6 @@
 <li class="product">
     <div class="image" 
-         style="background: url('{{ prod.media[0] | image_url: width: '800' }}'); background-size: cover; background-position: center center;"
+         style="position: relative; background: url('{{ prod.media[0] | image_url: width: '800' }}'); background-size: cover; background-position: center center;"
          onclick="window.location='{{ prod.url }}';">
 
       {% if !product.available %}
