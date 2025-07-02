@@ -13,6 +13,10 @@
     text-align: center;
     z-index: 9;
   }
+
+  .pagination {
+    
+  }
 </style>
 
 <div class="page-container collection">
@@ -53,9 +57,11 @@
     </ul>
     
 
-    {% if paginate.pages > 1 %}
-      {{ paginate | default_pagination }}
-    {% endif %}
+    <div class="pagination">
+      {% if paginate.pages > 1 %}
+        {{ paginate | default_pagination }}
+      {% endif %}
+    </div>
 
   {% endpaginate %}
 
