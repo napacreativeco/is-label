@@ -6,6 +6,9 @@
       {% if product.available %}
         <span class="so-indicator">sold out</span>
       {% endif %}
+      {% for vari in product.variants %}
+        {{ vari.inventory_quantity }}
+        {% endfor %}
     </div>
     <div class="title">
         <h2>{{ prod.title | link_to: prod.url }}</h2>
