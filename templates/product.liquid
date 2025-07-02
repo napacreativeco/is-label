@@ -104,7 +104,7 @@
         {% if product.available %}
           <input type="submit" name="add" id="add" value="{{ add_to_cart | escape }}">
         {% else %}
-          <input type="submit" name="add" id="add" value="{{ sold_out | escape }}">
+          <input disabled type="submit" name="add" id="add" value="{{ sold_out | escape }}">
         {% endif %}
       </div>
 
