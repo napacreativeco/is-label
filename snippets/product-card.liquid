@@ -3,7 +3,7 @@
          style="position: relative; background: url('{{ prod.media[0] | image_url: width: '800' }}'); background-size: cover; background-position: center center;"
          onclick="window.location='{{ prod.url }}';">
 
-      {% if prod.available %}
+      {% if prod.available == false %}
         <span class="so-indicator">sold out</span>
       {% endif %}
 
