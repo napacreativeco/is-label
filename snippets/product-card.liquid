@@ -2,7 +2,7 @@
     <div class="image" 
          style="position: relative; background: url('{{ prod.media[0] | image_url: width: '800' }}'); background-size: cover; background-position: center center;"
          onclick="window.location='{{ prod.url }}';">
-
+<span class="so-indicator">sold out</span>
       {% if product.available %}
         <span class="so-indicator">sold out</span>
       {% endif %}
