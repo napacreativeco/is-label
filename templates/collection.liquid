@@ -49,7 +49,7 @@
     <ul class="products">
       {% for coll in collections %}
         
-        {% for prod in coll.products %}
+        {% for prod in collections.products %}
           {% render 'product-card', prod: prod %}
         {% endfor %}
 
