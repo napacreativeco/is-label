@@ -47,13 +47,9 @@
     </div>
 
     <ul class="products">
-      {% for coll in collections %}
-        
         {% for prod in collection.products %}
           {% render 'product-card', prod: prod %}
         {% endfor %}
-
-      {% endfor %}
     </ul>
     
 
