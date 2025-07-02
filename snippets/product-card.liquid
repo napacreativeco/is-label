@@ -9,9 +9,6 @@
 
     </div>
     <div class="title">
-        {% for vari in product.variants %}
-          {{ vari.inventory_quantity }}
-        {% endfor %}
         <h2>{{ prod.title | link_to: prod.url }}</h2>
     </div>
     <div class="price">
