@@ -19,7 +19,6 @@
         "blocks": {
           "text_slide_hTm3z6": {
             "type": "text_slide",
-            "disabled": true,
             "settings": {
               "text_title": "Blone Noble \"Life's New Adventure\" LP",
               "text_description": "Doomsday Disco",
@@ -41,6 +40,7 @@
           },
           "text_slide_rUg7ic": {
             "type": "text_slide",
+            "disabled": true,
             "settings": {
               "text_title": "Kagami Smile \"Walking Towards An Abyss\" CS + Book",
               "text_description": "Ghosted Melody and Ambien Erosion",
