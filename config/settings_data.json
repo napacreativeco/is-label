@@ -19,6 +19,7 @@
         "blocks": {
           "text_slide_hTm3z6": {
             "type": "text_slide",
+            "disabled": true,
             "settings": {
               "text_title": "Blone Noble \"Life's New Adventure\" LP",
               "text_description": "Doomsday Disco",
@@ -37,11 +38,22 @@
               "release_background_image": "shopify://shop_images/temp-background.jpg",
               "release_url_listen": "shopify://products/test-vinyl"
             }
+          },
+          "text_slide_rUg7ic": {
+            "type": "text_slide",
+            "settings": {
+              "text_title": "Kagami Smile \"Walking Towards An Abyss\" CS + Book",
+              "text_description": "Ghosted Melody and Ambien Erosion",
+              "text_background_image": "shopify://shop_images/3000tape.png",
+              "text_url": "",
+              "text_url_text": ""
+            }
           }
         },
         "block_order": [
           "text_slide_hTm3z6",
-          "release_slide_kJDH46"
+          "release_slide_kJDH46",
+          "text_slide_rUg7ic"
         ],
         "settings": {
           "show_hero": true
