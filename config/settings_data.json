@@ -19,6 +19,7 @@
         "blocks": {
           "text_slide_hTm3z6": {
             "type": "text_slide",
+            "disabled": true,
             "settings": {
               "text_title": "Blone Noble \"Life's New Adventure\" LP",
               "text_description": "Doomsday Disco",
@@ -40,10 +41,9 @@
           },
           "text_slide_rUg7ic": {
             "type": "text_slide",
-            "disabled": true,
             "settings": {
               "text_title": "Kagami Smile \"Walking Towards An Abyss\" CS + Booklet",
-              "text_description": "Ghosted Melody And Ambient Erosion",
+              "text_description": "Ghostly Melody And Ambient Erosion",
               "text_background_image": "shopify://shop_images/3000tape.png",
               "text_url": "https://industrystandards.net/products/kagami-smile-walking-towards-an-abyss-cs-booklet-is014",
               "text_url_text": "Buy Now"
