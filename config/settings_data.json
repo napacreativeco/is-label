@@ -41,6 +41,7 @@
           },
           "text_slide_rUg7ic": {
             "type": "text_slide",
+            "disabled": true,
             "settings": {
               "text_title": "Kagami Smile \"Walking Towards An Abyss\" CS + Booklet",
               "text_description": "Ghostly Melody And Ambient Erosion",
@@ -48,12 +49,23 @@
               "text_url": "https://industrystandards.net/products/kagami-smile-walking-towards-an-abyss-cs-booklet-is014",
               "text_url_text": "Buy Now"
             }
+          },
+          "text_slide_g8te6c": {
+            "type": "text_slide",
+            "settings": {
+              "text_title": "Cairo Pythian \"Pressure Treated Cross\" LP [PRE-ORDER]",
+              "text_description": "Ten years in the making. Hardened and fortified. Ecstatic and honest in its visions.",
+              "text_background_image": "shopify://shop_images/ptccover.jpg",
+              "text_url": "https://industrystandards.net/products/cairo-pythian-pressure-treated-cross-lp-is0190-pre-order",
+              "text_url_text": "Buy Now"
+            }
           }
         },
         "block_order": [
           "text_slide_hTm3z6",
           "release_slide_kJDH46",
-          "text_slide_rUg7ic"
+          "text_slide_rUg7ic",
+          "text_slide_g8te6c"
         ],
         "settings": {
           "show_hero": true
