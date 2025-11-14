@@ -52,11 +52,22 @@
           },
           "text_slide_g8te6c": {
             "type": "text_slide",
+            "disabled": true,
             "settings": {
               "text_title": "Cairo Pythian \"Pressure Treated Cross\" LP",
               "text_description": "Ten years in the making. Hardened and fortified. Ecstatic and honest in its visions.",
               "text_background_image": "shopify://shop_images/ptccover.jpg",
               "text_url": "https://industrystandards.net/products/cairo-pythian-pressure-treated-cross-lp-is0190-pre-order",
+              "text_url_text": "Buy Now"
+            }
+          },
+          "text_slide_8CnkJ7": {
+            "type": "text_slide",
+            "settings": {
+              "text_title": "Smirk \"Domestic Dog b/w Manhunt In Paradise\" 7 inch",
+              "text_description": "It's always hard to admit when we're wrong.",
+              "text_background_image": "shopify://shop_images/IS023Cover.jpg",
+              "text_url": "https://industrystandards.net/products/smirk-domestic-dog-b-w-manhunt-in-paradise-vinyl-is023-pre-order",
               "text_url_text": "Buy Now"
             }
           }
@@ -65,7 +76,8 @@
           "text_slide_hTm3z6",
           "release_slide_kJDH46",
           "text_slide_rUg7ic",
-          "text_slide_g8te6c"
+          "text_slide_g8te6c",
+          "text_slide_8CnkJ7"
         ],
         "settings": {
           "show_hero": true
