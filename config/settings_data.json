@@ -81,6 +81,16 @@
               "text_url": "https://industrystandards.net/products/waitress-cause-undetermined-12-is021-pre-order",
               "text_url_text": "Buy Now"
             }
+          },
+          "text_slide_aYCGG8": {
+            "type": "text_slide",
+            "settings": {
+              "text_title": "Forced To World \"River Running (Right On) Over My Head\" 7\"",
+              "text_description": "",
+              "text_background_image": "shopify://shop_images/edtDSCN9727-Recovered.jpg",
+              "text_url": "",
+              "text_url_text": "Buy Now"
+            }
           }
         },
         "block_order": [
@@ -89,7 +99,8 @@
           "text_slide_rUg7ic",
           "text_slide_g8te6c",
           "text_slide_8CnkJ7",
-          "text_slide_L4FDVC"
+          "text_slide_L4FDVC",
+          "text_slide_aYCGG8"
         ],
         "settings": {
           "show_hero": true
